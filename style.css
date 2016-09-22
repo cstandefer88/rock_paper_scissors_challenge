@@ -99,14 +99,35 @@ h1 {
 
 }
 
-#wins {
+div.wins {
+  width: 20%;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+div.ties {
+  width: 20%;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+div.losses {
+  width: 20%;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+span .wins {
 
 }
 
-#ties {
+span .ties {
 
 }
 
-#losses {
+span .losses {
 
 }

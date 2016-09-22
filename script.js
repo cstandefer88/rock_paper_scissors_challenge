@@ -27,27 +27,39 @@ $(document).ready(function() {
 
 
   $('#rock').click(function() {
-    $('#userChoice').html("Rock");
-    botChoice();
-    // declareRoundWinner();
-    // $('#userChoice').html('');
-    // $('#botChoice').html('');
+    if ($('#countdown').html("")) {
+      $('#userChoice').html("");
+    } else {
+        $('#userChoice').html("Rock");
+        botChoice();
+        // declareRoundWinner();
+        // $('#userChoice').html('');
+        // $('#botChoice').html('');
+      }
   });
 
   $('#paper').click(function() {
-    $('#userChoice').html("Paper");
-    botChoice();
-    // declareRoundWinner();
-    // $('#userChoice').html('');
-    // $('#botChoice').html('');
+    if ($('#countdown').html("")) {
+      $('#userChoice').html("");
+    } else {
+        $('#userChoice').html("Paper");
+        botChoice();
+        // declareRoundWinner();
+        // $('#userChoice').html('');
+        // $('#botChoice').html('');
+      }
   });
 
   $('#scissors').click(function() {
-    $('#userChoice').html("Scissors");
-    botChoice();
-    // declareRoundWinner();
-    // $('#userChoice').html('');
-    // $('#botChoice').html('');
+    if ($('#countdown').html("")) {
+      $('#userChoice').html("");
+    } else {
+        $('#userChoice').html("Scissors");
+        botChoice();
+        // declareRoundWinner();
+        // $('#userChoice').html('');
+        // $('#botChoice').html('');
+      }
   });
 
 

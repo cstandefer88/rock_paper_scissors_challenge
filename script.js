@@ -6,6 +6,7 @@ $(document).ready(function() {
     $('#secondSet').val('');
   });
 
+
   var countdown = setInterval(counter, 1000);
 
   function counter() {
@@ -13,7 +14,6 @@ $(document).ready(function() {
 
     if ($('#countdown').html() == 0) {
       clearInterval();
-      // determineGameWinner();
       // declareWinner();
     } else if (($('#countdown').html() == 10)) {
         count = parseInt($('#countdown').html()) - 1;
@@ -27,31 +27,50 @@ $(document).ready(function() {
 
 
   $('#rock').click(function() {
-    $('#userChoice').html($('#rock').val());
-    // botChoice();
-    // determineRoundWinner();
+    $('#userChoice').html("Rock");
+    botChoice();
+    // declareRoundWinner();
     // $('#userChoice').html('');
+    // $('#botChoice').html('');
   });
 
   $('#paper').click(function() {
-    $('#userChoice').html($('#paper').val());
-    // botChoice();
-    // determineRoundWinner();
+    $('#userChoice').html("Paper");
+    botChoice();
+    // declareRoundWinner();
     // $('#userChoice').html('');
+    // $('#botChoice').html('');
   });
 
   $('#scissors').click(function() {
-    $('#userChoice').html($('#scissors').val());
-    // botChoice();
-    // determineRoundWinner();
+    $('#userChoice').html("Scissors");
+    botChoice();
+    // declareRoundWinner();
     // $('#userChoice').html('');
+    // $('#botChoice').html('');
   });
 
 
+  function botChoice() {
+    var bot = Math.random();
+    if (bot <= 0.33) {
+      $('#botChoice').html("Rock");
+    } else if (bot >= 0.66) {
+        $('#botChoice').html("Paper");
+      } else {
+          $('#botChoice').html("Scissors");
+        }
+  };
 
-  // function declareWinner() {
 
-  // }
+  // function declareRoundWinner() {
+
+  // };
+
+
+  // function declareGameWinner() {
+
+  // };
 
 
 });

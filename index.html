@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Rock, Paper, Scissors</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-  <h1>Rock, Paper, Scissors</h1>
 
-  <section id="time">
-    <div id="timeSet">
-      <div id="minutes">
-        <input type="number" value="Enter number of minutes" id="minuteSet">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body>
+
+
+    <h1>Rock, Paper, Scissors</h1>
+
+
+    <section id="time">
+      <div id="timeSet">
+        <div id="minutes">
+          Enter number of minutes:<input type="number" id="minuteSet">
+        </div>
+        <div id="seconds">
+          Enter number of seconds:<input type="number" id="secondSet">
+        </div>
       </div>
-      <div id="seconds">
-        <input type="number" value="Enter number of seconds" id="secondsSet">
+      <div id="timer">
+
       </div>
-    </div>
-    <div id="timer">
-
-    </div>
-  </section>
+    </section>
 
 
-  <section id="starter">
-    <div id="start">
-      <input type="button" value="Start" id="startButton">
-    </div>
-    <div id="restart">
-      <input type="button" value="Restart" id="restartButton">
-    </div>
-  </section>
+    <section id="starter">
+      <div id="start">
+        <input type="button" value="Start" id="startButton">
+      </div>
+      <div id="restart">
+        <input type="button" value="Restart" id="restartButton">
+      </div>
+    </section>
 
 
-  <section id="selectedChoice">
-    <div id="userChoice">
+    <section id="selectedChoice">
+      <div id="userChoice">
 
-    </div>
-    <div id="botChoice">
+      </div>
+      <div id="botChoice">
 
-    </div>
-  </section>
-
-
-  <section id="buttons">
-    <input type="button" value="Rock" id="rock">
-    <input type="button" value="Paper" id="paper">
-    <input type="button" value="Scissors" id="scissors">
-  </section>
+      </div>
+    </section>
 
 
-  <section id="scoreboard">
-    <div id="wins">
-
-    </div>
-    <div id="losses">
-
-    </div>
-    <div id="ties">
-
-    </div>
-  </section>
+    <section id="buttons">
+      <input type="button" value="Rock" id="rock">
+      <input type="button" value="Paper" id="paper">
+      <input type="button" value="Scissors" id="scissors">
+    </section>
 
 
-</body>
+    <section id="scoreboard">
+      <div id="wins">
+
+      </div>
+      <div id="losses">
+
+      </div>
+      <div id="ties">
+
+      </div>
+    </section>
+
+
+  </body>
+
 </html>

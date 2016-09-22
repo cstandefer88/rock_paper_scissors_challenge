@@ -13,6 +13,8 @@ $(document).ready(function() {
 
     if ($('#countdown').html() == 0) {
       clearInterval();
+      // determineGameWinner();
+      // declareWinner();
     } else if (($('#countdown').html() == 10)) {
         count = parseInt($('#countdown').html()) - 1;
         $('#countdown').html(count);
@@ -22,6 +24,34 @@ $(document).ready(function() {
           $('#countdown').html(count);
         }
   };
+
+
+  $('#rock').click(function() {
+    $('#userChoice').html($('#rock').val());
+    // botChoice();
+    // determineRoundWinner();
+    // $('#userChoice').html('');
+  });
+
+  $('#paper').click(function() {
+    $('#userChoice').html($('#paper').val());
+    // botChoice();
+    // determineRoundWinner();
+    // $('#userChoice').html('');
+  });
+
+  $('#scissors').click(function() {
+    $('#userChoice').html($('#scissors').val());
+    // botChoice();
+    // determineRoundWinner();
+    // $('#userChoice').html('');
+  });
+
+
+
+  // function declareWinner() {
+
+  // }
 
 
 });

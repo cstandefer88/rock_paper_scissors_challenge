@@ -66,11 +66,17 @@ h1 {
 }
 
 #userChoice {
-
+  width: 20%;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
 #botChoice {
-
+  width: 20%;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
 #buttons {

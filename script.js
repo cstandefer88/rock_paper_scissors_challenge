@@ -22,7 +22,10 @@ $(document).ready(function() {
 
     if ($('#countdown').html() == 0) {
       clearInterval();
-      // declareGameWinner();
+      declareGameWinner();
+      $('span.wins').html('0');
+      $('span.losses').html('0');
+      $('span.ties').html('0');
     } else if (($('#countdown').html() == 10)) {
         count = parseInt($('#countdown').html()) - 1;
         $('#countdown').html(count);
@@ -37,19 +40,19 @@ $(document).ready(function() {
   $('#rock').click(function() {
         $('#userChoice').html("Rock");
         botChoice();
-        declareRoundWinner();
+        determineRoundWinner();
   });
 
   $('#paper').click(function() {
         $('#userChoice').html("Paper");
         botChoice();
-        declareRoundWinner();
+        determineRoundWinner();
   });
 
   $('#scissors').click(function() {
         $('#userChoice').html("Scissors");
         botChoice();
-        declareRoundWinner();
+        determineRoundWinner();
   });
 
 
@@ -65,7 +68,7 @@ $(document).ready(function() {
   };
 
 
-  function declareRoundWinner() {
+  function determineRoundWinner() {
 
     var addWin = parseInt($('span.wins').html()) + 1;
     var addLoss = parseInt($('span.losses').html()) + 1;
@@ -97,9 +100,21 @@ $(document).ready(function() {
   };
 
 
-  // function declareGameWinner() {
+  function declareGameWinner() {
 
-  // };
+    var totalWins = parseInt($('span.wins').html());
+    var totalLosses = parseInt($('span.losses').html());
+    var totalTies = parseInt($('span.ties').html());
+
+    if (totalWins > totalLosses && totalTies) {
+      alert("You beat the computer this game!  Play again if you want!");
+
+    } else if (totalLosses > totalWins && totalTies) {
+        alert("The computer beat you this game!  Play again if you want!");
+    } else if (totalTies > totalWins && totalLosses) {
+        alert("You tied with the computer this game!  Play again if you want!");
+    }
+  };
 
 
 });

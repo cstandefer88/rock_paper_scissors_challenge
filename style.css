@@ -1,5 +1,5 @@
 body {
-
+  background-color: blue;
 }
 
 h1 {
@@ -13,7 +13,10 @@ h1 {
 }
 
 #timeSet {
-
+  display: flex;
+  width: 15%;
+  margin: 0 auto;
+  padding-bottom: 1%;
 }
 
 #minutes {
@@ -41,7 +44,8 @@ h1 {
   width: 10%;
   height: auto;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 #countdown {
@@ -71,25 +75,32 @@ h1 {
 }
 
 #selectedChoice {
-
+  width: 50%;
+  height: 75px;
+  margin: 0 auto;
+  display: flex;
 }
 
 #userChoice {
   width: 20%;
-  height: 100px;
+  height: 100%;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 #botChoice {
   width: 20%;
-  height: 100px;
+  height: 100%;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 #buttons {
-
+  width: 10%;
+  height: auto;
+  margin: 0 auto;
 }
 
 #rock {
@@ -105,8 +116,8 @@ h1 {
 }
 
 #scoreboard {
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  padding-top: 5%;
 }
 
 div.wins {
@@ -116,8 +127,8 @@ div.wins {
   width: 15%;
   height: auto;
   margin: 0 auto;
-  border: 1px solid black;
-  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 div.ties {
@@ -127,8 +138,8 @@ div.ties {
   width: 15%;
   height: auto;
   margin: 0 auto;
-  border: 1px solid black;
-  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 div.losses {
@@ -138,8 +149,8 @@ div.losses {
   width: 15%;
   height: auto;
   margin: 0 auto;
-  border: 1px solid black;
-  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 span .wins {

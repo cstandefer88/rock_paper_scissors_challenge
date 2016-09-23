@@ -1,6 +1,5 @@
 body {
-  border: 5px solid #000000;
-  background-color: #2A52BE;
+
 }
 
 h1 {
@@ -106,38 +105,54 @@ h1 {
 }
 
 #scoreboard {
-
+  width: 100%;
+  margin: 0 auto;
 }
 
 div.wins {
-  width: 20%;
-  height: 100px;
+  font-family: "TimeBurner", "Times New Roman";
+  font-size: 25px;
+  text-align: center;
+  width: 15%;
+  height: auto;
   margin: 0 auto;
   border: 1px solid black;
+  display: inline-block;
 }
 
 div.ties {
-  width: 20%;
-  height: 100px;
+  font-family: "TimeBurner", "Times New Roman";
+  font-size: 25px;
+  text-align: center;
+  width: 15%;
+  height: auto;
   margin: 0 auto;
   border: 1px solid black;
+  display: inline-block;
 }
 
 div.losses {
-  width: 20%;
-  height: 100px;
+  font-family: "TimeBurner", "Times New Roman";
+  font-size: 25px;
+  text-align: center;
+  width: 15%;
+  height: auto;
   margin: 0 auto;
   border: 1px solid black;
+  display: inline-block;
 }
 
 span .wins {
-
+  font-family: "TimeBurner", "Times New Roman";
+  font-size: 25px;
 }
 
 span .ties {
-
+  font-family: "TimeBurner", "Times New Roman";
+  font-size: 25px;
 }
 
 span .losses {
-
+  font-family: "TimeBurner", "Times New Roman";
+  font-size: 25px;
 }

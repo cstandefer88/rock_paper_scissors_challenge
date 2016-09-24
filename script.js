@@ -98,36 +98,51 @@ $(document).ready(function() {
     var addWin = parseInt($('span.wins').html()) + 1;
     var addLoss = parseInt($('span.losses').html()) + 1;
     var addTie = parseInt($('span.ties').html()) + 1;
+
+    function printWin() {
+      $('span.wins').html(addWin);
+    };
+
+
+    function printLoss() {
+      $('span.losses').html(addLoss);
+    };
+
+
+    function printTie() {
+      $('span.ties').html(addTie);
+    };
+
     var results = $('#userChoice').html() + ' and ' + $('#botChoice').html();
 
     switch(results) {
       case "Rock and Scissors":
         addWin;
-        $('span.wins').html(addWin);
+        printWin();
         break;
       case "Rock and Paper":
         addLoss;
-        $('span.losses').html(addLoss);
+        printLoss();
         break;
       case "Paper and Rock":
         addWin;
-        $('span.wins').html(addWin);
+        printWin();
         break;
       case "Paper and Scissors":
         addLoss;
-        $('span.losses').html(addLoss);
+        printLoss();
         break;
       case "Scissors and Paper":
         addWin;
-        $('span.wins').html(addWin);
+        printWin();
         break;
       case "Scissors and Rock":
         addLoss;
-        $('span.losses').html(addLoss);
+        printLoss();
         break;
       default:
         addTie;
-        $('span.ties').html(addTie);
+        printTie();
     };
   };
 

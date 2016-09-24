@@ -4,17 +4,23 @@ $(document).ready(function() {
 
   $('#startButton').click(function() {
     $('#countdown').html((parseInt($('#minuteSet').val() * 60) + parseInt($('#secondSet').val())));;
-    $('span.wins').html('0');
-    $('span.losses').html('0');
-    $('span.ties').html('0');
+    defaulter()
   });
 
   $('#restartButton').click(function() {
     $('#countdown').html((parseInt($('#minuteSet').val() * 60) + parseInt($('#secondSet').val())));;
+    defaulter();
+  });
+
+
+
+  // Function that defaults scoreboard back to 0
+
+  function defaulter() {
     $('span.wins').html('0');
     $('span.losses').html('0');
     $('span.ties').html('0');
-  });
+  };
 
 
 
@@ -34,9 +40,7 @@ $(document).ready(function() {
     if ($('#countdown').html() == 0) {
       clearInterval();
       declareGameWinner();
-      $('span.wins').html('0');
-      $('span.losses').html('0');
-      $('span.ties').html('0');
+      defaulter();
     } else if (($('#countdown').html() == 10)) {
         count = parseInt($('#countdown').html()) - 1;
         $('#countdown').html(count);

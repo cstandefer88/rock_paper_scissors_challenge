@@ -156,12 +156,14 @@ $(document).ready(function() {
     var totalLosses = parseInt($('span.losses').html());
     var totalTies = parseInt($('span.ties').html());
 
-    if (totalWins > totalLosses && totalTies) {
-      alert("You beat the computer this game!  Play again if you want!");
+    if (totalTies > totalLosses && totalWins) {
+      alert("You tied with the computer this game!  Play again if you want!");
     } else if (totalLosses > totalWins && totalTies) {
         alert("The computer beat you this game!  Play again if you want!");
-    } else if (totalTies > totalWins && totalLosses) {
-        alert("You tied with the computer this game!  Play again if you want!");
+    } else if (totalWins > totalTies && totalLosses) {
+        alert("You beat the computer this game!  Play again if you want!");
+    } else {
+      return
     }
   };
 

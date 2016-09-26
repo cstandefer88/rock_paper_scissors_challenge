@@ -422,19 +422,19 @@
 
   input#rock {
     font-size: 25px;
-    width: 33%;
+    width: 20%;
     margin: 0 auto;
   }
 
   input#paper {
     font-size: 25px;
-    width: 33%;
+    width: 20%;
     margin: 0 auto;
   }
 
   input#scissors {
     font-size: 25px;
-    width: 33%;
+    width: 20%;
     margin: 0 auto;
   }
 

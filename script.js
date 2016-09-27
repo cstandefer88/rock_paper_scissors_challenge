@@ -3,12 +3,12 @@ $(document).ready(function() {
   // Start and Restart buttons setting chosen value of timer and default scoreboard respectively
 
   $('#startButton').click(function() {
-    $('#countdown').html((parseInt($('#minuteSet').val() * 60) + parseInt($('#secondSet').val())));;
-    defaulter()
+    $('#countdown').html((parseInt($('#minuteSet').val() * 60) + parseInt($('#secondSet').val())));
+    defaulter();
   });
 
   $('#restartButton').click(function() {
-    $('#countdown').html((parseInt($('#minuteSet').val() * 60) + parseInt($('#secondSet').val())));;
+    $('#countdown').html((parseInt($('#minuteSet').val() * 60) + parseInt($('#secondSet').val())));
     defaulter();
   });
 
